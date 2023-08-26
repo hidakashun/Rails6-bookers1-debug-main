@@ -13,6 +13,7 @@ class BooksController < ApplicationController
       flash[:notice] = "Book was successfully created."
       redirect_to book_path(@book.id)
     else
+      @books = Book.all#6. 空白で投稿するとエラーが出る
       render :index
     end
   end
