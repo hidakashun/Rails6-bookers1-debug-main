@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2023_08_26_100800) do
     t.text "body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "title"#5. NoMethodError undefined method 'title'
+    t.string "title"
   end
 
 end
